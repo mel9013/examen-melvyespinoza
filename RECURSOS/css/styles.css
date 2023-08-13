@@ -1,0 +1,150 @@
+/*global*/
+body{
+    font-family: arial;
+    font-size: 18px;
+    line-height: 18px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+h1{
+    margin: 0 0;
+    font-size: 77px;
+    line-height: 83px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 700;
+    max-width: 491px;  
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+    margin: 0;
+    color: #000000;
+}
+
+.container{
+    padding: 0 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+/*nav-menu*/
+.nav-menu{
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    top: 20px;
+}
+.nav-menu .row-nav{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -20px;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-menu .row-nav > div{
+    padding: 0 20px;
+}
+.inner-nav{
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+.col-left-item{
+    display: flex;
+    align-items: center;
+}
+
+.logo-left{
+    border-right: 2px solid #a8acb5;
+    padding-right: 17px;
+    margin-right: 17px;
+}
+
+.logo-left img{
+    max-width: 104px;
+    width: 100%;
+}
+.nav-menu ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.nav-menu ul li{
+    padding: 0;
+    margin: 0;
+}
+
+.red-social-list img{
+    max-width: 16px;
+    width: 100%;
+}
+
+.menu ul{
+    margin: 0 -20px;
+    display: flex;
+    align-items: center;
+}
+.menu ul li{
+    padding: 0px;
+}
+
+.menu li a{
+    color: #a8acb5; 
+    padding: 10px 20px;
+    text-transform: uppercase;
+}
+
+.menu li.active a{
+    color: #000000;
+}
+.red-social-list ul{
+    align-items: center;
+    justify-content: end;
+    margin: 0 -10px;
+    display: flex;
+    align-items: center;
+}
+
+.red-social-list ul li{
+    padding: 0;
+}
+
+.red-social-list a{
+    padding: 10px;
+}
+/*hero*/
+.hero-page{
+    background-image: url(../img/startup-1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    min-height: 400px;
+    position: relative;
+    padding: 120px 0;
+    box-sizing: border-box;
+}
+.hero-page .container{
+    position: relative;
+    z-index: 1;
+}
+.hero-page::before{
+    content: "";
+    background-color: rgb(0 0 0 / 47%);
+    z-index: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
